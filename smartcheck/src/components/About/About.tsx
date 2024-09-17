@@ -50,7 +50,7 @@ const About: React.FC = () => {
         </div>
 
         <div className="repositorio">
-          <a href="https://github.com/HeitorOrtega/SmartConnectCar.git" target="_blank" rel="noopener noreferrer">Repositório no GitHub</a>
+          <a href="https://github.com/leonardobianchii/SmartCheck-React" target="_blank" rel="noopener noreferrer">Repositório no GitHub</a>
         </div>
       </section>
     </div>

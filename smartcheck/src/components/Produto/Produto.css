@@ -1,0 +1,114 @@
+/* Estilo geral da página */
+.produto-container {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.produto-container h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.produto-container p {
+    font-size: 18px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Estilo para os blocos de produto */
+.produto-boxes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 0 20px;
+}
+
+.produto-box {
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.produto-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.produto-box img {
+    max-width: 60px;
+    margin-bottom: 10px;
+}
+
+/* Modais */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal.active {
+  display: flex;
+}
+
+.conteudo-modal {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.fechar {
+  color: #aaa;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.fechar:hover,
+.fechar:focus {
+  color: black;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .produto-boxes {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .produto-box {
+        width: 100%;
+        max-width: 90%;
+    }
+}
