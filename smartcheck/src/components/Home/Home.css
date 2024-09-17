@@ -1,0 +1,69 @@
+.home-container {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+/* Ajuste da Seção Banner e Botão */
+.banner {
+  background-color: #e9ecef;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.banner p {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.banner span {
+  color: #007bff;
+}
+
+.botao-saiba-mais {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.botao-saiba-mais:hover {
+  background-color: #0056b3;
+}
+
+/* Imagens e Blocos */
+.blocos .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+
+.blocos .container .bloco {
+  flex: 1;
+  margin: 0 15px;
+}
+
+@media (max-width: 992px) {
+  .blocos .container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .blocos .container .bloco {
+      margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner p {
+      font-size: 28px;
+  }
+
+  .botao-saiba-mais {
+      font-size: 16px;
+      padding: 8px 16px;
+  }
+}
